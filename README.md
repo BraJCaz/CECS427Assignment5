@@ -3,4 +3,4 @@
 # Professor Ponce 
 # Due Date: 4/22/2025
 # Objective 
-- This assignment requires 
+- This assignment requires us to solidy my understanding of web crawling by creating a graph of 
