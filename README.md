@@ -12,4 +12,20 @@ python ./page_rank.py --crawler crawler.txt --input graph.gml --loglogplot --cra
 - The script graph.py must be located in the current directory because that's how ensure robust files handle mechanisms such as error checking, file existence validation and appropriate error messages.
 --crawler crawler.txt
 - This specifies the file containing the initial web pages to crawl. The crawling must create a directed graph using scrapy and visiting only Html pages. The first value is an integer representing the maximum number of nodes to load the second line gives the domain to crawl; next are the web pages to start crawling.
-- 
+- The format of the input file is:
+n: Integer with the number of vertices (pages)
+domain: String 
+webpage_1: String 
+webpage_2: String 
+...
+webpage_n: String  
+For example
+100
+https://dblp.org/pid
+https://dblp.org/pid/e/PErdos.html
+https://dblp.org/pid/s/PaulGSpirakis.html
+https://dblp.org/pid/89/8192.html
+- We use this file to test Crawling 1:
+-- input graph.gml
+- This specifies the log-log plot of the degree distribution of the graph
+--crawler_graph out_graph.gml 
