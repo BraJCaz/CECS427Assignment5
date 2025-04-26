@@ -34,6 +34,7 @@ https://dblp.org/pid/89/8192.html
 Examples:
 python ./page_rank.py --crawler crawler.txt --loglogplot --crawler_graph out_graph.gml  --pagerank_values node_rank.txt
 - This command prints out a directed graph using the crawling and the parameters in crawler.txt file because it also performs the Page rank algorithm in the created graph. It also plots the log plot, writes the resulting digraph in out_graph.gml and writes the page rank algorithm of all nodes in node_rank.txt.
+- For example, when I ran this command on my machine, it gave me 100 max nodes, crawled 763 nodes and 762 edges, it saved my GML graph to out_graph.gml, graph visualization to crawler_graph.png, completed pagerank algorithm and created my log-log plot with 1,000 nodes. 
 
 python ./page_rank.py --input graph.gml --loglogplot --pagerank_values node_rank.txt
 - Finally, this command above performs the Page rank algorithm in graph.gml plots the Log plot and writes the page of all nodes in node_rank.txt.
