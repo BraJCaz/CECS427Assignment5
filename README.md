@@ -38,3 +38,4 @@ python ./page_rank.py --crawler crawler.txt --loglogplot --crawler_graph out_gra
 
 python ./page_rank.py --input graph.gml --loglogplot --pagerank_values node_rank.txt
 - Finally, this command above performs the Page rank algorithm in graph.gml plots the Log plot and writes the page of all nodes in node_rank.txt.
+- For example, when I ran this command on my machine, it gave me a loaded graph from file with 4 nodes and 4 edges, it computed the pagerank algorithm, saved the pagerank values to node_rank.txt and it saved my log-log plot to 1000 nodes. 
