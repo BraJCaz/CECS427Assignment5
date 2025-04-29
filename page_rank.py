@@ -42,14 +42,14 @@ def write_pagerank_to_file(pagerank_dict, output_path):
 # ------------------------------------------------------------
 def draw_graph(graph, output_file="crawler_graph.png"):
     pos = nx.spring_layout(graph, k=0.5, iterations=50)
-    plt.figure(figsize=(12, 10))
+    plt.figure(figsize=(16, 12))
     nx.draw(graph, pos, with_labels=True, node_size=300, font_size=8,
             edge_color='gray', node_color='skyblue')
     plt.title("Crawled Graph")
     plt.savefig(output_file)
     print(f"[INFO] Saved graph visualization to {output_file}")
     plt.close()
-
+# our plot log log graph
 def plot_loglog_degree_distribution(Graph, output_file="LogLog_1000-Nodes.png"):
     degree = [deg for _, deg in Graph.degree()]
     degree_counts = {}
@@ -65,10 +65,14 @@ def plot_loglog_degree_distribution(Graph, output_file="LogLog_1000-Nodes.png"):
     plt.figure()
     # our loglog plot will have blue dots
     plt.loglog(x, y, 'bo')
+    # our x label is our degree as a log plot
     plt.xlabel("Degree (log)")
+    # our y lavvel is number of nodes
     plt.ylabel("Number of Nodes (log)")
+    # our graph title will be named log-log degree distribution
     plt.title("Log-Log Degree Distribution")
     plt.savefig(output_file)
+    # We saved our log-log plot to our output file
     print(f"[INFO] Saved log-log plot to {output_file}")
     plt.show()
     plt.close()
@@ -88,6 +92,7 @@ def main():
             print(f"[INFO] Crawled {Graph.number_of_nodes()} nodes and {Graph.number_of_edges()} edges")
             if args.crawler_graph:
                 nx.write_gml(Graph, args.crawler_graph)
+                # this saves the saved graph GML graph file
                 print(f"[INFO] Saved GML graph to {args.crawler_graph}")
             draw_graph(Graph)
         else:
