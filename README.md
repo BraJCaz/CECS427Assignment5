@@ -1,13 +1,14 @@
 # CECS427Assignment5
 # Brandon Cazares 
 # Professor Ponce 
-# Due Date: 4/29/2025
+# Due Date: 5/13/2025
 # Objective 
 - This assignment requires us to solidy my understanding of web crawling by creating a graph on the internet using Python and applying the PageRank algorithm to identify the most relevant pages. Acquiring this knowledge will not only boost my programming skills but, it'll also enchace my comprehensiveness in an evolving Computer Science field.
 # Requirement 
 - This is the command to run our Python script in this assignment, rank_page.py located in the current directory and either reads the file graph or creates a graph by crawling on the internet starting with the given web address in crawler.txt. Here, graph.gml or the created graph is the graph that will be used as input for the PageRank algorithm and to plot the log plot.
 - This assignment requires us to write a Python code that runs in a terminal because we need to understand that the program accepts optional parameters. The command to execute the Python program is this:
 python ./page_rank.py --crawler crawler.txt --input graph.gml --loglogplot --crawler_graph out_graph.gml -- pagerank_values node_rank.txt
+- When I ran this command, it gave me crawled 66 nodes and 65 edges, saved my GML to an output graph file, pagerank computed, saved page_rank values to node.txt, also save pagerank colored-graph to node.graph_png and node_link graph saved to node_graph.png
 # Description of Parameters
 - The script graph.py must be located in the current directory because that's how ensure robust files handle mechanisms such as error checking, file existence validation and appropriate error messages.
 --crawler crawler.txt
