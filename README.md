@@ -26,6 +26,11 @@ https://dblp.org/pid
 https://dblp.org/pid/e/PErdos.html
 https://dblp.org/pid/s/PaulGSpirakis.html
 https://dblp.org/pid/89/8192.html
+- I updated my crawler.txt file with 20 nodes instead of 100
+20
+https://dblp.org
+https://dblp.org/pid/49/4862.html
+https://dblp.org/pid/l/LeslieLamport.html
 - We use this file to test Crawling 1:
 -- input graph.gml
 - This specifies the log-log plot of the degree distribution of the graph
@@ -33,9 +38,10 @@ https://dblp.org/pid/89/8192.html
 - This saves the processed graph to out_graph.gml
 --pagerank_values node_rank.txt
 Examples:
+
 python ./page_rank.py --crawler crawler.txt --loglogplot --crawler_graph out_graph.gml  --pagerank_values node_rank.txt
 - This command prints out a directed graph using the crawling and the parameters in crawler.txt file because it also performs the Page rank algorithm in the created graph. It also plots the log plot, writes the resulting digraph in out_graph.gml and writes the page rank algorithm of all nodes in node_rank.txt.
-- For example, when I ran this command on my machine, it gave me 100 max nodes, crawled 763 nodes and 762 edges, it saved my GML graph to out_graph.gml, graph visualization to crawler_graph.png, completed pagerank algorithm and created my log-log plot with 1,000 nodes. 
+- For example, when I ran this command on my machine, it gave me 20 max nodes 
 
 python ./page_rank.py --input graph.gml --loglogplot --pagerank_values node_rank.txt
 - Finally, this command above performs the Page rank algorithm in graph.gml plots the Log plot and writes the page of all nodes in node_rank.txt.
