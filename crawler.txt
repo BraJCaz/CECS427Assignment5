@@ -1,14 +1,4 @@
-100
+20
 https://dblp.org
-https://dblp.org/pid/e/PErdos.html
-https://dblp.org/pid/s/PaulGSpirakis.html
-https://dblp.org/pid/89/8192.html
-https://dblp.org/pid/44/4451.html
-https://dblp.org/pid/16/1454.html
-https://dblp.org/pid/65/2021.html
-https://dblp.org/pid/31/1668.html
-https://dblp.org/pid/02/1224.html
-https://dblp.org/pid/32/3194.html
-https://dblp.org/pid/32/3143.html
-https://dblp.org/pid/32/3201.html
-https://dblp.org/pid/32/3224.html
+https://dblp.org/pid/49/4862.html
+https://dblp.org/pid/l/LeslieLamport.html
